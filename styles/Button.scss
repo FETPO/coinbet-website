@@ -1,0 +1,36 @@
+// @import "../../assets/scss/_variables.scss";
+// @import "../../assets/scss/mixins.scss";
+
+button {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: $white;
+  border-radius: 12px;
+  padding: 13px 24px;
+  cursor: pointer;
+  &.primary {
+    background: $primary-color;
+  }
+  &.secondary {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    // &.dark {
+    //   border: 1px solid $white;
+    //   color: $white;
+    // }
+  }
+  // @include md {
+  //   padding: 7.5px 29px;
+  //   font-size: 14px;
+  //   line-height: 19px;
+  //   &.primary {
+  //     min-width: 142px;
+  //   }
+  //   &.secondary {
+  //     min-width: 142px;
+  //   }
+  // }
+}

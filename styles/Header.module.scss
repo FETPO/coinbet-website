@@ -1,0 +1,79 @@
+@import "../assets/scss/_variables.scss";
+@import "../assets/scss/mixins.scss";
+.websiteHeader {
+  padding: 0 20px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+    .websiteLogo {
+      @include sm {
+        width: 104px;
+      }
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      .nav {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        margin-right: 60px;
+        > li {
+          &:not(:last-child) {
+            margin-right: 40px;
+          }
+          > a {
+            display: flex;
+            align-items: center;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            color: $black;
+            > svg {
+              margin-left: 13px;
+            }
+          }
+        }
+        @include md {
+          display: none;
+        }
+      }
+      .navbarActions {
+        display: flex;
+        > button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 12px;
+
+          &:nth-child(1) {
+            padding: 10px 24px;
+            @include sm {
+              padding: 6px 16px;
+            }
+          }
+          &:nth-child(2) {
+            display: none;
+            margin-left: 20px;
+            @include md {
+              display: flex;
+            }
+            @include sm {
+              margin-left: 12px;
+              // padding: 6px 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include md {
+    padding: 0 60px;
+  }
+  @include sm {
+    padding: 0 20px;
+  }
+}

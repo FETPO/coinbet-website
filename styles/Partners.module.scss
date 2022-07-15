@@ -1,0 +1,19 @@
+@import "../assets/scss/_variables.scss";
+@import "../assets/scss/mixins.scss";
+.partners {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > div {
+    @include md {
+      max-width: 96px;
+    }
+  }
+  @include sm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    justify-items: center;
+  }
+}

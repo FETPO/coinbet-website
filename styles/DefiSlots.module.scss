@@ -1,0 +1,80 @@
+@import "../assets/scss/_variables.scss";
+@import "../assets/scss/mixins.scss";
+.defiSlotsSection {
+  padding: 75px 96px;
+  background: $black;
+  border-radius: 24px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  grid-gap: 121px;
+  .defiSlots {
+    .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 60px;
+      color: $white;
+      @include md {
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+      }
+      @include sm {
+        font-size: 30px;
+        line-height: 38px;
+      }
+    }
+    .desc {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #adb4bd;
+      margin: 24px 0 32px;
+      @include md {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+      }
+    }
+  }
+  .actionButtons {
+    > button {
+      &:nth-child(2) {
+        margin-left: 20px;
+        @include sm {
+          margin: 0;
+        }
+      }
+      @include sm {
+        width: 100%;
+      }
+    }
+    @include md {
+      text-align: center;
+    }
+    @include sm {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 20px;
+    }
+  }
+  @include xl {
+    grid-gap: 70px;
+  }
+  @include lg {
+    grid-gap: 10px;
+    padding: 75px 30px;
+  }
+  @include md {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 60px 60px 10px;
+  }
+  @include sm {
+    padding: 40px 20px;
+  }
+}

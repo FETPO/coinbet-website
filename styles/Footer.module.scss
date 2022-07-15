@@ -1,0 +1,101 @@
+@import "../assets/scss/_variables.scss";
+@import "../assets/scss/mixins.scss";
+
+.websiteFooter {
+  padding: 60px 20px 32px;
+  .footerNavigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+    padding-bottom: 44px;
+    border-bottom: 1px solid #adb4bda6;
+    .websiteLogo {
+      > p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        max-width: 321px;
+        color: $black;
+        margin-top: 32px;
+        @include sm {
+          max-width: unset;
+        }
+      }
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      > div {
+        &:nth-child(2) {
+          margin-left: 111px;
+          @include md {
+            margin-left: 30px;
+          }
+          @include sm {
+            margin-left: 90px;
+          }
+        }
+
+        > h3 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 24px;
+          color: $black;
+          margin-bottom: 18px;
+        }
+        > p {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 22px;
+          color: #67707b;
+          &:not(:last-child) {
+            margin-bottom: 18px;
+          }
+        }
+      }
+    }
+    @include sm {
+      grid-template-columns: 1fr;
+      grid-gap: 24px;
+    }
+  }
+  .footerSocials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    .socials {
+      display: flex;
+      align-items: center;
+      > div {
+        background: #fff;
+        padding: 15px;
+        border-radius: 12px;
+        &:not(:last-child) {
+          margin-right: 40px;
+          @include sm {
+            margin-right: unset;
+          }
+        }
+      }
+      @include sm {
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 24px;
+      }
+    }
+    .copyright {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      color: #67707b;
+    }
+    @include sm {
+      flex-direction: column;
+    }
+  }
+}

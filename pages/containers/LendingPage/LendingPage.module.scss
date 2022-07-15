@@ -1,0 +1,16 @@
+@import "../../../assets/scss/_variables.scss";
+@import "../../../assets/scss/mixins.scss";
+.lendingPageContainer {
+  overflow-x: hidden;
+}
+.whiteContainer {
+  background: $white;
+  border-radius: 32px;
+  padding: 140px 20px;
+  @include md {
+    padding: 100px 20px;
+  }
+  @include sm {
+    padding: 60px 20px;
+  }
+}
