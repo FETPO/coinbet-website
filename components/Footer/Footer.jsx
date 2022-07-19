@@ -37,18 +37,18 @@ const Footer = () => {
         </div>
         <div className={styles.footerSocials}>
           <div className={styles.socials}>
-            <div>
+            <a href="https://twitter.com/CoinbetFi">
               <Twitter />
-            </div>
-            <div>
+            </a>
+            <a href="#">
               <Discord />
-            </div>
-            <div>
+            </a>
+            <a href="https://github.com/CoinbetFi">
               <Github />
-            </div>
-            <div>
+            </a>
+            <a href="#">
               <Medium />
-            </div>
+            </a>
           </div>
           <p className={styles.copyright}>
             © 2022 CoinbetFi. All right reserved.

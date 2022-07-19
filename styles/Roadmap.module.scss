@@ -30,16 +30,11 @@
       grid-gap: 24px;
       overflow-x: auto;
       position: relative;
-      padding-right: 450px;
+      padding-right: 50px;
+      padding-left: 20px;
       padding-top: 88px;
       &::-webkit-scrollbar {
         display: none;
-      }
-      @media (max-width: 1400px) {
-        padding-right: 155px;
-      }
-      @include xl {
-        padding-right: 75px;
       }
       .roadmap {
         position: relative;

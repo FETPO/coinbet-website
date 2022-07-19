@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import styles from "../../styles/Header.module.scss";
 import NavArrow from "../Icons/NavArrow";
 import Button from "../Button/Button";
@@ -34,6 +34,7 @@ const Header = () => {
       // document.querySelector(".mobile-menu-logo").style.zIndex = "1";
     }
   };
+  
 
   return (
     <div className={styles.websiteHeader}>
@@ -192,18 +193,18 @@ const Header = () => {
                         <div className="sidebar-footer">
                           <Button className="primary">Launch App</Button>
                           <div className="nav">
-                            <div>
+                            <a href="https://twitter.com/CoinbetFi">
                               <Twitter />
-                            </div>
-                            <div>
+                            </a>
+                            <a href="#">
                               <Discord />
-                            </div>
-                            <div>
+                            </a>
+                            <a href="https://github.com/CoinbetFi">
                               <Github />
-                            </div>
-                            <div>
+                            </a>
+                            <a href="#">
                               <Medium />
-                            </div>
+                            </a>
                           </div>
                         </div>
                       </div>
