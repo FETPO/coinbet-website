@@ -8,6 +8,9 @@
   grid-template-columns: auto 1fr;
   align-items: center;
   grid-gap: 121px;
+  .logo {
+    max-width: 360px;
+  }
   .defiSlots {
     .title {
       font-style: normal;

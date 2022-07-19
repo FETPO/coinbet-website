@@ -1,12 +1,14 @@
 @import "../../../assets/scss/_variables.scss";
 @import "../../../assets/scss/mixins.scss";
 .lendingPageContainer {
-  overflow-x: hidden;
+  position: relative;
+  z-index: 2;
 }
 .whiteContainer {
   background: $white;
   border-radius: 32px;
   padding: 140px 20px;
+  position: relative;
   @include md {
     padding: 100px 20px;
   }

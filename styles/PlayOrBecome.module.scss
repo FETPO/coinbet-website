@@ -12,12 +12,14 @@
     grid-gap: 139px;
     .information {
       .title {
+        font-family: $satoshiB;
         font-style: normal;
         font-weight: 700;
         font-size: 48px;
         line-height: 60px;
         margin-bottom: 48px;
         > span {
+          font-family: $satoshi;
           line-height: 60px;
           font-weight: 400;
         }
@@ -98,10 +100,13 @@
       }
     }
     .picture {
+      max-width: 320px;
+      margin-right: 20px;
       @include md {
         display: none;
       }
       @include sm {
+        margin-right: 0;
         display: block;
       }
     }

@@ -1,57 +1,235 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../../styles/Header.module.scss";
-import Image from "next/image";
-import websiteLogo from "../../assets/images/website-logo.png";
 import NavArrow from "../Icons/NavArrow";
 import Button from "../Button/Button";
 import MenuIcon from "../Icons/MenuIcon";
+import WebsiteLogo from "./../Icons/WebsiteLogo";
+import Popup from "reactjs-popup";
+import SolidDefiIcon from "../Icons/SolidDefiIcon";
+import { MiniSlotIcon } from "../Icons/MiniSlotIcon";
+import MiniChartBarIcon from "../Icons/MiniChartBarIcon";
+import DocumentDublicate from "../Icons/DocumentDublicate";
+import TeamIcon from "../Icons/TeamIcon";
+import ArchiveIcon from "../Icons/ArchiveIcon";
+import Sidebar from "react-sidebar";
+import CloseIcon from "../Icons/CloseIcon";
+import Twitter from "../Icons/Twitter";
+import Discord from "../Icons/Discord";
+import Github from "../Icons/Github";
+import Medium from "../Icons/Medium";
 
 const Header = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const onSetSidebarOpen = (open) => {
+    setSidebarOpen(open);
+    if (sidebarOpen) {
+      document
+        .querySelector(".sidebar-root")
+        .classList.remove("sidbar-container");
+      document.querySelector("html").classList.remove("fixed");
+    } else {
+      document.querySelector(".sidebar-root").classList.add("sidbar-container");
+      document.querySelector("html").classList.add("fixed");
+      // document.querySelector(".mobile-menu-logo").style.zIndex = "1";
+    }
+  };
+
   return (
     <div className={styles.websiteHeader}>
       <div className="container">
         <div className={styles.header}>
           <div className={styles.websiteLogo}>
-            <Image src={websiteLogo} alt="website-logo" />
+            <WebsiteLogo />
           </div>
           <div className={styles.navbar}>
             <ul className={styles.nav}>
               <li>
-                <a
-                  href="https://discord.gg/8d9TRNspct"
-                  target="_blank"
-                  rel="noreferrer"
+                <Popup
+                  trigger={
+                    <div>
+                      Products <NavArrow />
+                    </div>
+                  }
+                  position="bottom center"
+                  on="click"
+                  closeOnDocumentClick
+                  mouseLeaveDelay={300}
+                  mouseEnterDelay={0}
+                  className={styles.dropdown}
+                  contentStyle={{
+                    padding: "0px",
+                    border: "none",
+                    outline: "none",
+                  }}
+                  arrow={false}
                 >
-                  Products
-                  <NavArrow />
-                </a>
+                  <div className={styles.dropdownMenu}>
+                    <a href="#" className={styles.dropdownItem}>
+                      <div className={styles.dropdownItemLogo}>
+                        <SolidDefiIcon />
+                      </div>
+                      <div className={styles.dropdownItemDetails}>
+                        <h3>DeFi Slots</h3>
+                        <p>The latest industry news, updates and info.</p>
+                      </div>
+                    </a>
+                    <a href="#" className={styles.dropdownItem}>
+                      <div className={styles.dropdownItemLogo}>
+                        <MiniSlotIcon />
+                      </div>
+                      <div className={styles.dropdownItemDetails}>
+                        <h3>NoLoss Slots</h3>
+                        <p>Learn how our customers are making...</p>
+                      </div>
+                    </a>
+
+                    <a href="#" className={styles.dropdownItem}>
+                      <div className={styles.dropdownItemLogo}>
+                        <MiniChartBarIcon />
+                      </div>
+                      <div className={styles.dropdownItemDetails}>
+                        <h3>Earn Yield</h3>
+                        <p>Get up and running on new features.</p>
+                      </div>
+                    </a>
+                  </div>
+                </Popup>
               </li>
               <li>
-                <a
-                  href="https://t.me/+Ta9SRQuD8BhiMmVk"
-                  target="_blank"
-                  rel="noreferrer"
+                <Popup
+                  trigger={
+                    <div>
+                      Info
+                      <NavArrow />
+                    </div>
+                  }
+                  position="bottom center"
+                  on="click"
+                  closeOnDocumentClick
+                  mouseLeaveDelay={300}
+                  mouseEnterDelay={0}
+                  contentStyle={{ padding: "0px", border: "none" }}
+                  arrow={false}
                 >
-                  Info
-                  <NavArrow />
-                </a>
+                  <div className={styles.dropdownMenu}>
+                    <a href="#" className={styles.dropdownItem}>
+                      <div className={styles.dropdownItemLogo}>
+                        <DocumentDublicate />
+                      </div>
+                      <div className={styles.dropdownItemDetails}>
+                        <h3>Whitepaper</h3>
+                        <p>The latest industry news, updates and info.</p>
+                      </div>
+                    </a>
+                    <a href="#" className={styles.dropdownItem}>
+                      <div className={styles.dropdownItemLogo}>
+                        <TeamIcon />
+                      </div>
+                      <div className={styles.dropdownItemDetails}>
+                        <h3>Team</h3>
+                        <p>Get to know people at CoinbetFi</p>
+                      </div>
+                    </a>
+                    <a href="#" className={styles.dropdownItem}>
+                      <div className={styles.dropdownItemLogo}>
+                        <ArchiveIcon />
+                      </div>
+                      <div className={styles.dropdownItemDetails}>
+                        <h3>Docs</h3>
+                        <p>Get up and running on new features.</p>
+                      </div>
+                    </a>
+                  </div>
+                </Popup>
               </li>
               <li>
-                <a
-                  href="https://twitter.com/defiroot"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Governance
-                  <NavArrow />
-                </a>
+                <a href="#">Governance</a>
               </li>
             </ul>
             <div className={styles.navbarActions}>
-              <Button className="primary ">Launch App</Button>
-              <Button className="secondary  onlyIcon">
+              <Button className="primary">Launch App</Button>
+              <Button
+                onClick={() => onSetSidebarOpen(true)}
+                className="secondary onlyIcon"
+              >
                 <MenuIcon />
               </Button>
+              <div className="mobile-menu">
+                <Sidebar
+                  sidebar={
+                    <div className="sidbar-content">
+                      <div className="sidebar-close">
+                        <div className="sidebar-website-logo">
+                          <WebsiteLogo />
+                        </div>
+                        <Button
+                          onClick={() => onSetSidebarOpen(false)}
+                          className="secondary onlyIcon"
+                        >
+                          <CloseIcon />
+                        </Button>
+                      </div>
+                      <div className="main-content">
+                        <div className="product-and-info">
+                          <div className="products-section">
+                            <h3>Products</h3>
+                            <div>
+                              <a href="#">DeFi Slots</a>
+                              <a href="#">NoLoss Slots</a>
+                              <a href="#">Earn Yield</a>
+                            </div>
+                          </div>
+                          <div className="info-section">
+                            <h3>Info</h3>
+                            <div>
+                              <a href="#">Whitepaper</a>
+                              <a href="#">Team</a>
+                              <a href="#">Docs</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="sidebar-footer">
+                          <Button className="primary">Launch App</Button>
+                          <div className="nav">
+                            <div>
+                              <Twitter />
+                            </div>
+                            <div>
+                              <Discord />
+                            </div>
+                            <div>
+                              <Github />
+                            </div>
+                            <div>
+                              <Medium />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  }
+                  open={sidebarOpen}
+                  onSetOpen={onSetSidebarOpen}
+                  styles={{
+                    sidebar: {
+                      background: "#F3F5F8",
+                      borderLeft: "1px solid #E3E4EC",
+                      boxShadow: "0px 10px 36px rgba(76, 80, 89, 0.12)",
+                    },
+                  }}
+                  rootClassName={"sidebar-root"}
+                  sidebarClassName={"sidebar"}
+                  contentClassName={"sidebar-content"}
+                  overlayClassName={"sidbar-overlay"}
+                  pullRight
+                >
+                  <button
+                    className="sidebar-action"
+                    onClick={() => onSetSidebarOpen(true)}
+                  ></button>
+                </Sidebar>
+              </div>
             </div>
           </div>
         </div>

@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "../../styles/Footer.module.scss";
-import websiteLogo from "../../assets/images/website-logo.png";
-import Image from "next/image";
 import Twitter from "../Icons/Twitter";
 import Discord from "../Icons/Discord";
 import Github from "../Icons/Github";
 import Medium from "../Icons/Medium";
+import WebsiteLogo from "../Icons/WebsiteLogo";
+import bgGradient from "../../assets/images/LandingPage/gradient.png";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
       <div className="container">
         <div className={styles.footerNavigation}>
           <div className={styles.websiteLogo}>
-            <Image src={websiteLogo} alt="website-logo" />
+            <WebsiteLogo />
             <p>
               CoinbetFi protocol brings DeFi to online betting. Permissionless
               and Decentralised.
@@ -22,15 +23,15 @@ const Footer = () => {
           <div className={styles.nav}>
             <div className={styles.productsNav}>
               <h3>Products</h3>
-              <p>DeFi Slots</p>
-              <p>NoLoss Slots</p>
-              <p>Earn Yield</p>
+              <a href="#">DeFi Slots</a>
+              <a href="#">NoLoss Slots</a>
+              <a href="#">Earn Yield</a>
             </div>
             <div className={styles.infoNav}>
               <h3>Info</h3>
-              <p>Whitepaper</p>
-              <p>Team</p>
-              <p>Docs</p>
+              <a href="#">Whitepaper</a>
+              <a href="#">Team</a>
+              <a href="#">Docs</a>
             </div>
           </div>
         </div>
@@ -53,6 +54,9 @@ const Footer = () => {
             © 2022 CoinbetFi. All right reserved.
           </p>
         </div>
+      </div>
+      <div className={styles.bg}>
+        <Image src={bgGradient} alt="bgGradient" />
       </div>
     </div>
   );

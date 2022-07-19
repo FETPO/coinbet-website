@@ -12,6 +12,7 @@
   .noLossSlots {
     padding-bottom: 120px;
     .title {
+      font-family: $satoshiB;
       font-style: normal;
       font-weight: 700;
       font-size: 48px;
@@ -72,6 +73,7 @@
   .logo {
     display: flex;
     align-items: flex-end;
+    max-width: 380px;
   }
   @include xl {
     grid-gap: 50px;

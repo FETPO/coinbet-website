@@ -5,9 +5,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   > div {
     @include md {
       max-width: 96px;
+      > svg {
+        width: 100%;
+      }
     }
   }
   @include sm {

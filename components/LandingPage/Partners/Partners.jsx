@@ -1,19 +1,19 @@
 import React from "react";
 import styles from "../../../styles/Partners.module.scss";
-import chainlink from "../../../assets/images/LandingPage/chainlink.png";
-import polygon from "../../../assets/images/LandingPage/polygon.png";
-import binanceSmart from "../../../assets/images/LandingPage/binance-smart.png";
-import binanceLabs from "../../../assets/images/LandingPage/binance-labs.png";
+import binanceSmart from "../../../assets/images/LandingPage/binance-smart.svg";
+import binanceLabs from "../../../assets/images/LandingPage/binance-labs.svg";
 import Image from "next/image";
+import ChainlinkIcon from "../../Icons/ChainlinkIcon";
+import PolygonIcon from "../../Icons/PolygonIcon";
 
 const Partners = () => {
   return (
     <div className={` container ${styles.partners}`}>
       <div>
-        <Image src={chainlink} alt="icon" />
+        <ChainlinkIcon />
       </div>
       <div>
-        <Image src={polygon} alt="icon" />
+        <PolygonIcon />
       </div>
       <div>
         <Image src={binanceSmart} alt="icon" />

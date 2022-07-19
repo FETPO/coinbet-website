@@ -1,76 +1,105 @@
 @import "../assets/scss/_variables.scss";
+@import "../assets/scss/_fonts.scss";
 @import "../assets/scss/mixins.scss";
 
 .heroSection {
-  display: grid;
-  grid-template-columns: 600px auto;
-  padding: 0 20px;
-  padding-top: 119px;
-  padding-bottom: 139px;
-  .information {
-    .title {
-      font-style: normal;
-      font-weight: 700;
-      font-size: 66px;
-      line-height: 70px;
-      color: $black;
-      margin-bottom: 24px;
-      margin-top: 40px;
-      > span {
-        font-weight: 400;
+  position: relative;
+  > div {
+    &:nth-child(1) {
+      display: grid;
+      grid-template-columns: 600px auto;
+      padding: 0 20px;
+      padding-top: 119px;
+      padding-bottom: 139px;
+      position: relative;
+      z-index: 1;
+      .information {
+        .title {
+          font-family: $satoshiB;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 66px;
+          line-height: 70px;
+          color: $black;
+          margin-bottom: 24px;
+          margin-top: 40px;
+          > span {
+            font-weight: 400;
+            font-family: $satoshi;
+          }
+          @include md {
+            font-size: 48px;
+            line-height: 60px;
+            text-align: center;
+          }
+          @include sm {
+            font-size: 36px;
+            line-height: 44px;
+          }
+        }
+        .description {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 26px;
+          max-width: 461px;
+          margin-bottom: 32px;
+          @include md {
+            margin: 0 auto;
+            margin-bottom: 32px;
+            text-align: center;
+          }
+        }
+        .actions {
+          > button {
+            &:nth-child(2) {
+              margin-left: 20px;
+            }
+          }
+          @include md {
+            text-align: center;
+          }
+          @include sm {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+          }
+        }
       }
-      @include md {
-        font-size: 48px;
-        line-height: 60px;
-        text-align: center;
-      }
-      @include sm {
-        font-size: 36px;
-        line-height: 44px;
-      }
-    }
-    .description {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 26px;
-      max-width: 461px;
-      margin-bottom: 32px;
-      @include md {
-        margin: 0 auto;
-        margin-bottom: 32px;
-        text-align: center;
-      }
-    }
-    .actions {
-      > button {
-        &:nth-child(2) {
-          margin-left: 20px;
+      .heroImage {
+        @include md {
+          text-align: center;
         }
       }
       @include md {
-        text-align: center;
+        padding: 60px 20px;
+        grid-template-columns: 448px;
+        grid-gap: 32px;
+        justify-content: center;
       }
-      @include sm {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 100%;
+      @include md {
+        grid-template-columns: 1fr;
+        padding: 60px 20px 20px;
       }
     }
   }
-  .heroImage {
-    @include md {
-      text-align: center;
+  .bg {
+    position: absolute !important;
+    top: -100px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 0;
+    pointer-events: none;
+    img {
+      min-width: 100%;
+      min-height: 100%;
     }
-  }
-  @include md {
-    padding: 60px 20px;
-    grid-template-columns: 448px;
-    grid-gap: 32px;
-    justify-content: center;
-  }
-  @include md {
-    grid-template-columns: 1fr;
-    padding: 60px 20px 20px;
+    > span {
+      min-height: 115vh !important;
+      @include md {
+        min-height: 140vh !important;
+      }
+    }
   }
 }

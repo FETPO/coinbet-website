@@ -7,6 +7,7 @@
   position: relative;
   min-height: 580px;
   .title {
+    font-family: $satoshiB;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -73,6 +74,7 @@
           margin-bottom: 32px;
         }
         .subtitle {
+          font-family: $satoshiB;
           font-style: normal;
           font-weight: 700;
           font-size: 30px;

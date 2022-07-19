@@ -1,12 +1,19 @@
 @import "../assets/scss/_variables.scss";
 @import "../assets/scss/mixins.scss";
+@import "../assets/scss/fonts.scss";
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Satoshi", sans-serif;
+  font-family: $satoshi;
   background: #f3f5f8;
+  overflow-x: hidden;
+}
+html {
+  &.fixed {
+    overflow: hidden;
+  }
 }
 
 a {
@@ -60,6 +67,7 @@ button {
     }
     &.onlyIcon {
       padding: 12px;
+      display: flex;
     }
     &:hover {
       background: #f8f9fc;
@@ -72,5 +80,122 @@ button {
   @include sm {
     padding: 6px 16px;
     font-size: 14px;
+  }
+}
+
+.mobile-menu {
+  display: none;
+  .sidebar-root {
+    display: none;
+    @include lg {
+      display: block;
+    }
+    width: 0px;
+    &.sidbar-container {
+      position: absolute;
+      width: 455px !important;
+      height: 100vh;
+      right: -60px !important;
+      left: unset !important;
+      @include sm {
+        width: 110% !important;
+        right: -20px !important;
+      }
+    }
+    .sidbar-overlay {
+      height: 100vh;
+      background: none !important;
+    }
+    .sidebar-content {
+      visibility: hidden;
+    }
+    .sidebar {
+      left: -1px;
+      width: 100%;
+      padding: 28px 60px 60px;
+      .sidbar-content {
+        height: 100%;
+        .sidebar-close {
+          display: flex;
+          justify-content: flex-end;
+          .sidebar-website-logo {
+            display: none;
+            @include sm {
+              display: block;
+              max-width: 104px;
+              > svg {
+                width: 100%;
+              }
+            }
+          }
+          @include sm {
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+        .main-content {
+          height: calc(100% - 46px);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .product-and-info {
+            .products-section,
+            .info-section {
+              margin-top: 30px;
+              > h3 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 26px;
+                margin-bottom: 16px;
+              }
+              > div {
+                display: grid;
+                grid-gap: 16px;
+                > a {
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 16px;
+                  line-height: 24px;
+                  padding: 10px 16px;
+                  &:hover {
+                    background: $white;
+                    border-radius: 12px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .sidebar-footer {
+          > .primary {
+            width: 100%;
+          }
+          .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 24px;
+            > div {
+              background: #fff;
+              padding: 15px;
+              border-radius: 12px;
+              &:not(:last-child) {
+                margin-right: 40px;
+                @include sm {
+                  margin-right: unset;
+                }
+              }
+            }
+          }
+        }
+      }
+      @include sm {
+        padding: 20px;
+      }
+    }
+  }
+  @include md {
+    display: block;
   }
 }
