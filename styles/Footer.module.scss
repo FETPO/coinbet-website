@@ -76,10 +76,11 @@
     .socials {
       display: flex;
       align-items: center;
-      > div {
+      > a {
         background: #fff;
         padding: 15px;
         border-radius: 12px;
+        display: flex;
         &:not(:last-child) {
           margin-right: 40px;
           @include sm {
