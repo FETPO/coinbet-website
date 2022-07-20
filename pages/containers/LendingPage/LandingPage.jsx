@@ -1,7 +1,7 @@
 import React from "react";
-import DefiSlots from "../../../components/LandingPage/DefiSlots/DefiSlots";
+import YieldAndPlay from "../../../components/LandingPage/YieldAndPlay/YieldAndPlay";
 import HeroSection from "../../../components/LandingPage/HeroSection/HeroSection";
-import NoLossSlots from "../../../components/LandingPage/NoLossSlots/NoLossSlots";
+import CoinbetBuidl from "../../../components/LandingPage/CoinbetBuidl/CoinbetBuidl";
 import Partners from "../../../components/LandingPage/Partners/Partners";
 import PlayOrBecome from "../../../components/LandingPage/PlayOrBecome/PlayOrBecome";
 import Roadmap from "../../../components/LandingPage/Roadmap/Roadmap";
@@ -13,8 +13,8 @@ const LandingPage = () => {
       <Partners />
       <div className={styles.whiteContainer}>
         <PlayOrBecome />
-        <DefiSlots />
-        <NoLossSlots />
+        <YieldAndPlay />
+        <CoinbetBuidl />
       </div>
       <Roadmap />
     </div>

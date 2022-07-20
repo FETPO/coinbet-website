@@ -71,8 +71,8 @@ const Header = () => {
                         <SolidDefiIcon />
                       </div>
                       <div className={styles.dropdownItemDetails}>
-                        <h3>DeFi Slots</h3>
-                        <p>The latest industry news, updates and info.</p>
+                        <h3>Coinbet Yield</h3>
+                        <p>Earn yield through the protocol</p>
                       </div>
                     </a>
                     <a href="#" className={styles.dropdownItem}>
@@ -80,8 +80,8 @@ const Header = () => {
                         <MiniSlotIcon />
                       </div>
                       <div className={styles.dropdownItemDetails}>
-                        <h3>NoLoss Slots</h3>
-                        <p>Learn how our customers are making...</p>
+                        <h3>Coinbet Play</h3>
+                        <p>Play decentralized betting games</p>
                       </div>
                     </a>
 
@@ -90,8 +90,8 @@ const Header = () => {
                         <MiniChartBarIcon />
                       </div>
                       <div className={styles.dropdownItemDetails}>
-                        <h3>Earn Yield</h3>
-                        <p>Get up and running on new features.</p>
+                        <h3>Coinbet Buidl</h3>
+                        <p>Deploy your own casino game</p>
                       </div>
                     </a>
                   </div>
@@ -120,7 +120,7 @@ const Header = () => {
                       </div>
                       <div className={styles.dropdownItemDetails}>
                         <h3>Whitepaper</h3>
-                        <p>The latest industry news, updates and info.</p>
+                        <p>Technology and purpose of the project</p>
                       </div>
                     </a>
                     <a href="#" className={styles.dropdownItem}>
@@ -129,7 +129,7 @@ const Header = () => {
                       </div>
                       <div className={styles.dropdownItemDetails}>
                         <h3>Team</h3>
-                        <p>Get to know people at CoinbetFi</p>
+                        <p>Get to know the people behind Coinbet</p>
                       </div>
                     </a>
                     <a href="#" className={styles.dropdownItem}>
@@ -138,7 +138,7 @@ const Header = () => {
                       </div>
                       <div className={styles.dropdownItemDetails}>
                         <h3>Docs</h3>
-                        <p>Get up and running on new features.</p>
+                        <p>Get up and running on new features</p>
                       </div>
                     </a>
                   </div>
@@ -176,9 +176,9 @@ const Header = () => {
                           <div className="products-section">
                             <h3>Products</h3>
                             <div>
-                              <a href="#">DeFi Slots</a>
-                              <a href="#">NoLoss Slots</a>
-                              <a href="#">Earn Yield</a>
+                              <a href="#">Coinbet Yield</a>
+                              <a href="#">Coinbet Play</a>
+                              <a href="#">Coinbet Buidl</a>
                             </div>
                           </div>
                           <div className="info-section">

@@ -14,12 +14,12 @@ const HeroSection = () => {
             Become the house or win the jackpot. <span> Choice is yours</span>
           </h1>
           <p className={styles.description}>
-            CoinbetFi protocol brings DeFi to online betting. Permissionless and
+            Coinbet protocol brings DeFi to online betting. Permissionless and
             Decentralised.
           </p>
           <div className={styles.actions}>
             <Button className="primary">Earn Yield</Button>
-            <Button className="secondary">Gamble</Button>
+            <Button className="secondary">Start Betting</Button>
           </div>
         </div>
         <div className={styles.heroImage}>

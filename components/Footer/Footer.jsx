@@ -16,16 +16,16 @@ const Footer = () => {
           <div className={styles.websiteLogo}>
             <WebsiteLogo />
             <p>
-              CoinbetFi protocol brings DeFi to online betting. Permissionless
+              Coinbet protocol brings DeFi to online betting. Permissionless
               and Decentralised.
             </p>
           </div>
           <div className={styles.nav}>
             <div className={styles.productsNav}>
               <h3>Products</h3>
-              <a href="#">DeFi Slots</a>
-              <a href="#">NoLoss Slots</a>
-              <a href="#">Earn Yield</a>
+              <a href="#">Coinbet Yield</a>
+              <a href="#">Coinbet Play</a>
+              <a href="#">Coinbet Buidl</a>
             </div>
             <div className={styles.infoNav}>
               <h3>Info</h3>

@@ -22,8 +22,8 @@ const PlayOrBecome = () => {
                 <ChartArrow />
               </div>
               <p>
-                Earn Yield through bankrolling betting activities and earning a
-                share from the rewards + some more text
+                Earn Yield through bankrolling betting activities and earn a
+                share from the rewards
               </p>
             </div>
             <div className={styles.variant}>

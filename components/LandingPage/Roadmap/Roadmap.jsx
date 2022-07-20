@@ -27,18 +27,27 @@ const Roadmap = () => {
           <div className={styles.roadmap}>
             <div className={styles.number}>01</div>
             <p className={styles.date}>September 2022</p>
-            <h3 className={styles.subtitle}>Launch first product</h3>
+            <h3 className={styles.subtitle}>Launch Degen Slots, powered by Coinbet</h3>
             <p className={styles.desc}>
-              DeFi Slots game with Liquidity pool (Mainnet, Polygon, BSC)
+              DeFi Slots game with Rewards Liquidity pool (Mainnet, Polygon, BSC), powered by Coinbet.
             </p>
           </div>
           <div className={styles.roadmap}>
             <div className={styles.number}>02</div>
             <p className={styles.date}>November 2022</p>
-            <h3 className={styles.subtitle}>Launch ZeroLoss Slots game</h3>
+            <h3 className={styles.subtitle}>Launch Coinbet Yield and Play Casino</h3>
             <p className={styles.desc}>
-              Generating prizes using various DeFi protocols - Compound, YFI,
-              etc.
+            Yield generating reward pools paired with betting games with pluggable reward strategies. 
+            </p>
+          </div>
+          <div className={styles.roadmap}>
+            <div className={styles.number}>04</div>
+            <p className={styles.date}>September 2023</p>
+            <h3 className={styles.subtitle}>
+              Launch Coinbet Buidl platform
+            </h3>
+            <p className={styles.desc}>
+            Deploy and launch your own casino games - with custom token, game and RTP percentages
             </p>
           </div>
           <div className={styles.roadmap}>
@@ -46,17 +55,7 @@ const Roadmap = () => {
             <p className={styles.date}>February 2023</p>
             <h3 className={styles.subtitle}>Launch Governance - CoinbetDAO</h3>
             <p className={styles.desc}>
-              Yield Farming for CoinbetFi Governance Token
-            </p>
-          </div>
-          <div className={styles.roadmap}>
-            <div className={styles.number}>04</div>
-            <p className={styles.date}>September 2023</p>
-            <h3 className={styles.subtitle}>
-              Launch multiple betting and NFT games
-            </h3>
-            <p className={styles.desc}>
-              Roulette, Coin Flip, NFT gambles after community voting.
+              Yield Farming for Coinbet Governance Token and DAO activation
             </p>
           </div>
         </div>
