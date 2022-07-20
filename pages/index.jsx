@@ -28,7 +28,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://firebasestorage.googleapis.com/v0/b/coinbet-finance.appspot.com/o/CoinbetFi.png?alt=media"
+          content="https://coinbet.finance/preview.png"
         />
 
         {/* Twitter Meta Tags  */}
@@ -42,7 +42,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://firebasestorage.googleapis.com/v0/b/coinbet-finance.appspot.com/o/CoinbetFi.png?alt=media"
+          content="https://coinbet.finance/preview.png"
         />
       </Head>
 
