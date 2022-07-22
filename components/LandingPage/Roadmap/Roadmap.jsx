@@ -44,7 +44,7 @@ const Roadmap = () => {
             <div className={styles.number}>04</div>
             <p className={styles.date}>September 2023</p>
             <h3 className={styles.subtitle}>
-              Launch Coinbet Buidl platform
+              Launch Coinbet Plug and Play platform
             </h3>
             <p className={styles.desc}>
             Deploy and launch your own casino games - with custom token, game and RTP percentages

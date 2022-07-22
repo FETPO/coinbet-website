@@ -25,7 +25,7 @@ const Footer = () => {
               <h3>Products</h3>
               <a href="#">Coinbet Yield</a>
               <a href="#">Coinbet Play</a>
-              <a href="#">Coinbet Buidl</a>
+              <a href="#">Coinbet Plug and Play</a>
             </div>
             <div className={styles.infoNav}>
               <h3>Info</h3>

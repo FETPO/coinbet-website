@@ -90,7 +90,7 @@ const Header = () => {
                         <MiniChartBarIcon />
                       </div>
                       <div className={styles.dropdownItemDetails}>
-                        <h3>Coinbet Buidl</h3>
+                        <h3>Coinbet Plug and Play</h3>
                         <p>Deploy your own casino game</p>
                       </div>
                     </a>
@@ -178,7 +178,7 @@ const Header = () => {
                             <div>
                               <a href="#">Coinbet Yield</a>
                               <a href="#">Coinbet Play</a>
-                              <a href="#">Coinbet Buidl</a>
+                              <a href="#">Coinbet Plug and Play</a>
                             </div>
                           </div>
                           <div className="info-section">

@@ -7,7 +7,7 @@ const CoinbetBuidl = () => {
   return (
     <div className={`container ${styles.coinbetBuidlSection}`}>
       <div className={styles.coinbetBuidl}>
-        <h1 className={styles.title}>Coinbet Buidl</h1>
+        <h1 className={styles.title}>Coinbet Plug and Play Launchpad</h1>
         <p className={styles.desc}>
           <span> Create your own casino - with custom token, game and RTP </span>
           Coinbet provides users with the ability to launch their own decentralized casino games with several clicks.
