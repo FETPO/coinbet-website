@@ -51,6 +51,8 @@ button {
     }
     &:hover {
       background: #6446dc;
+      transform: scale(1.01);
+      transition: all 100ms;
     }
     &:disabled {
       background: #d5cbff;
@@ -72,6 +74,8 @@ button {
     }
     &:hover {
       background: #f8f9fc;
+      transform: scale(1.01);
+      transition: all 100ms;
     }
     &:disabled {
       background: #ffffff;

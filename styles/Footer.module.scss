@@ -58,6 +58,9 @@
           &:not(:last-child) {
             margin-bottom: 18px;
           }
+          &:hover {
+            text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+          }
         }
       }
     }
@@ -87,7 +90,11 @@
             margin-right: unset;
           }
         }
+        &:hover {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
       }
+
       @include sm {
         width: 100%;
         justify-content: space-around;

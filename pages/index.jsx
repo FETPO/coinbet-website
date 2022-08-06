@@ -44,6 +44,10 @@ export default function Home() {
           name="twitter:image"
           content="https://coinbet.finance/preview.png"
         />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+        />
       </Head>
 
       <Header />

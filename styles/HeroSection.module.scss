@@ -6,8 +6,7 @@
   position: relative;
   > div {
     &:nth-child(1) {
-      display: grid;
-      grid-template-columns: 600px auto;
+      display: flex;
       padding: 0 20px;
       padding-top: 119px;
       padding-bottom: 139px;
@@ -67,11 +66,14 @@
         }
       }
       .heroImage {
+        display: flex;
+        align-items: center;
         @include md {
           text-align: center;
         }
       }
       @include md {
+        display: grid;
         padding: 60px 20px;
         grid-template-columns: 448px;
         grid-gap: 32px;

@@ -5,22 +5,31 @@ import binanceLabs from "../../../assets/images/LandingPage/binance-labs.svg";
 import Image from "next/image";
 import ChainlinkIcon from "../../Icons/ChainlinkIcon";
 import PolygonIcon from "../../Icons/PolygonIcon";
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 
 const Partners = () => {
   return (
     <div className={` container ${styles.partners}`}>
-      <div>
-        <ChainlinkIcon />
-      </div>
-      <div>
-        <PolygonIcon />
-      </div>
-      <div>
-        <Image src={binanceSmart} alt="icon" />
-      </div>
-      <div>
-        <Image src={binanceLabs} alt="icon" />
-      </div>
+      <AnimatedOnScroll animationIn="fadeIn" animationInDelay={200}>
+        <div>
+          <ChainlinkIcon />
+        </div>
+      </AnimatedOnScroll>
+      <AnimatedOnScroll animationIn="fadeIn" animationInDelay={300}>
+        <div>
+          <PolygonIcon />
+        </div>
+      </AnimatedOnScroll>
+      <AnimatedOnScroll animationIn="fadeIn" animationInDelay={400}>
+        <div>
+          <Image src={binanceSmart} alt="icon" />
+        </div>
+      </AnimatedOnScroll>
+      <AnimatedOnScroll animationIn="fadeIn" animationInDelay={500}>
+        <div>
+          <Image src={binanceLabs} alt="icon" />
+        </div>
+      </AnimatedOnScroll>
     </div>
   );
 };
