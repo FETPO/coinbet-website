@@ -14,8 +14,10 @@
     "react-animated-css-onscroll": "^1.2.1",
     "react-dom": "18.2.0",
     "react-sidebar": "^3.0.2",
+    "react-slick": "^0.29.0",
     "reactjs-popup": "^2.0.5",
-    "sass": "^1.53.0"
+    "sass": "^1.53.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "eslint": "8.19.0",

@@ -12,7 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
 
         {/* HTML Meta Tags */}
-        <title>CoinbetFi - Building the bridge between DeFi and online betting</title>
+        <title>
+          CoinbetFi - Building the bridge between DeFi and online betting
+        </title>
         <meta
           name="description"
           content="Coinbet protocol brings DeFi to online betting. Permissionless and Decentralised."
@@ -21,7 +23,10 @@ export default function Home() {
         {/* Facebook Meta Tags */}
         <meta property="og:url" content="https://coinbet.finance/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="CoinbetFi - Building the bridge between DeFi and online betting" />
+        <meta
+          property="og:title"
+          content="CoinbetFi - Building the bridge between DeFi and online betting"
+        />
         <meta
           property="og:description"
           content="Coinbet protocol brings DeFi to online betting. Permissionless and Decentralised."
@@ -35,7 +40,10 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="coinbet.finance" />
         <meta property="twitter:url" content="https://coinbet.finance/" />
-        <meta name="twitter:title" content="CoinbetFi - Building the bridge between DeFi and online betting" />
+        <meta
+          name="twitter:title"
+          content="CoinbetFi - Building the bridge between DeFi and online betting"
+        />
         <meta
           name="twitter:description"
           content="Coinbet protocol brings DeFi to online betting. Permissionless and Decentralised."
@@ -47,6 +55,17 @@ export default function Home() {
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          charset="UTF-8"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
       </Head>
 

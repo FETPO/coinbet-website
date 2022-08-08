@@ -1,0 +1,73 @@
+@import "../assets/scss/_variables.scss";
+@import "../assets/scss/mixins.scss";
+
+.slick-slider {
+  margin: auto;
+  .slick-slide {
+    padding: 36px 24px;
+  }
+  .slick-list {
+  }
+
+  .slick-track {
+    padding: 24px 0;
+  }
+
+  .roadmap {
+    position: relative;
+    padding: 60px 40px;
+    background: #ffffff;
+    border-radius: 16px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    .number {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: $white;
+      padding: 10px;
+      background: #7451ff;
+      border-radius: 12px;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 20px;
+      top: -28px;
+      z-index: 100;
+    }
+    .date {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      color: $black;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+    .subtitle {
+      font-family: $satoshiB;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 38px;
+      color: $black;
+      margin-bottom: 20px;
+      @include md {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+    .desc {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #67707b;
+    }
+  }
+}
