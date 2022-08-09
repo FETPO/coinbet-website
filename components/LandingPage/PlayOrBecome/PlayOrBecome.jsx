@@ -29,8 +29,8 @@ const PlayOrBecome = () => {
                   <ChartArrow />
                 </div>
                 <p>
-                  Earn Yield through bankrolling betting activities and earn a
-                  share from the rewards
+                  Earn yield through bankrolling betting activities and earn a
+                  share from the rewards, all comlpetely decentralised.
                 </p>
               </div>
             </AnimatedOnScroll>

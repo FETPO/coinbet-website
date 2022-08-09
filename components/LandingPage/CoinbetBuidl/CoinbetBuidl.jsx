@@ -9,7 +9,7 @@ const CoinbetBuidl = () => {
     <div className={`container ${styles.coinbetBuidlSection}`}>
       <AnimatedOnScroll animationIn="fadeIn" animationInDelay={100}>
         <div className={styles.coinbetBuidl}>
-          <h1 className={styles.title}>Coinbet Plug and Play Launchpad</h1>
+          <h1 className={styles.title}>Coinbet Plug and Play Platform</h1>
           <p className={styles.desc}>
             <span>
               Create your own casino - with custom token, game and RTP{" "}
