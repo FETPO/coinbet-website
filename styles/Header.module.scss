@@ -17,6 +17,7 @@
     .navbar {
       display: flex;
       align-items: center;
+      font-family: $satoshi;
       .nav {
         display: flex;
         list-style: none;
@@ -55,6 +56,9 @@
 
           &:nth-child(1) {
             padding: 10px 24px;
+            font-size: 14px;
+            line-height: 24px;
+            color: white;
             @include sm {
               padding: 6px 16px;
             }
@@ -92,37 +96,60 @@
   display: grid;
   grid-gap: 8px;
   margin-top: 8px;
-  .dropdownItem {
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    grid-gap: 16px;
-    padding: 12px;
-    .dropdownItemDetails {
-      > h3 {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 24px;
-      }
-      > p {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 22px;
-        color: #67707b;
-        margin-top: 4px;
-      }
-    }
-    .dropdownItemLogo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #f8f9fc;
+  animation: growDown 350ms ease-in-out forwards;
+  transform-origin: top center;
+
+  @for $num from 1 through 3 {
+    .dropdownItem_#{$num} {
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      grid-gap: 16px;
+      padding: 12px;
       border-radius: 12px;
+      animation: growDown 200ms ($num * 50ms) ease-in-out forwards;
+      transform-origin: top center;
+      &:active {
+        pointer-events: none;
+      }
+      .dropdownItemDetails {
+        > h3 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+        }
+        > p {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 22px;
+          color: #67707b;
+          margin-top: 4px;
+        }
+      }
+      .dropdownItemLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f8f9fc;
+        border-radius: 12px;
+      }
+      &:hover {
+        background: #f8f9fc;
+        cursor: pointer;
+      }
+      &:focus-visible {
+        outline: none;
+      }
     }
-    &:hover {
-      background: #f8f9fc;
-      cursor: pointer;
+  }
+
+  @keyframes growDown {
+    0% {
+      transform: scaleY(0);
+    }
+    100% {
+      transform: scaleY(1);
     }
   }
 }

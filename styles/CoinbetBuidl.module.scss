@@ -61,7 +61,7 @@
       @include sm {
         width: 100%;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
         grid-gap: 20px;
         justify-content: unset;
       }

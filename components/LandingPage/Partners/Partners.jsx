@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../../styles/Partners.module.scss";
 import binanceSmart from "../../../assets/images/LandingPage/binance-smart.svg";
 import binanceLabs from "../../../assets/images/LandingPage/binance-labs.svg";
+import moralisLogo from "../../../assets/images/LandingPage/moralis-logo.svg";
 import Image from "next/image";
 import ChainlinkIcon from "../../Icons/ChainlinkIcon";
 import PolygonIcon from "../../Icons/PolygonIcon";
@@ -27,7 +28,7 @@ const Partners = () => {
       </AnimatedOnScroll>
       <AnimatedOnScroll animationIn="fadeIn" animationInDelay={500}>
         <div>
-          <Image src={binanceLabs} alt="icon" />
+          <Image src={moralisLogo} width={150} height={45} alt="icon" />
         </div>
       </AnimatedOnScroll>
     </div>

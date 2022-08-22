@@ -7,6 +7,7 @@ import Medium from "../Icons/Medium";
 import WebsiteLogo from "../Icons/WebsiteLogo";
 import bgGradient from "../../assets/images/LandingPage/gradient.png";
 import Image from "next/image";
+import { Tooltip } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
@@ -16,16 +17,22 @@ const Footer = () => {
           <div className={styles.websiteLogo}>
             <WebsiteLogo />
             <p>
-              Coinbet protocol brings DeFi to online betting. Permissionless
-              and Decentralised.
+              Coinbet protocol brings DeFi to online betting. Permissionless and
+              Decentralised.
             </p>
           </div>
           <div className={styles.nav}>
             <div className={styles.productsNav}>
               <h3>Products</h3>
-              <a href="#">Coinbet Yield</a>
-              <a href="#">Coinbet Play</a>
-              <a href="#">Coinbet Plug and Play</a>
+              <Tooltip hasArrow label="Coming soon" variant={"black"}>
+                <a href="#">Coinbet Yield</a>
+              </Tooltip>
+              <Tooltip hasArrow label="Coming soon" variant={"black"}>
+                <a href="#">Coinbet Play</a>
+              </Tooltip>
+              <Tooltip hasArrow label="Coming soon" variant={"black"}>
+                <a href="#">Coinbet Plug and Play</a>
+              </Tooltip>
             </div>
             <div className={styles.infoNav}>
               <h3>Info</h3>

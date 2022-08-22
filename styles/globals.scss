@@ -9,6 +9,7 @@ body {
   font-family: $satoshi;
   background: #f3f5f8;
   overflow-x: hidden;
+  -webkit-font-smoothing: auto !important;
 }
 html {
   &.fixed {
@@ -40,12 +41,15 @@ button {
   line-height: 24px;
   color: $white;
   border-radius: 12px;
-  padding: 13px 24px;
+  padding: 12px 24px;
   border: none;
   cursor: pointer;
 
   &.primary {
     background: $primary-color;
+    color: $white;
+    font-size: 16px;
+    padding: 12px 24px;
     &.onlyIcon {
       padding: 12px;
     }
@@ -56,6 +60,7 @@ button {
     }
     &:disabled {
       background: #d5cbff;
+      cursor: not-allowed;
     }
   }
   &.secondary {
@@ -80,6 +85,7 @@ button {
     &:disabled {
       background: #ffffff;
       color: #adb4bd;
+      cursor: not-allowed;
     }
   }
   @include sm {

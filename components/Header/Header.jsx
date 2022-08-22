@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import styles from "../../styles/Header.module.scss";
 import NavArrow from "../Icons/NavArrow";
 import Button from "../Button/Button";
@@ -17,6 +17,7 @@ import Twitter from "../Icons/Twitter";
 import Discord from "../Icons/Discord";
 import Github from "../Icons/Github";
 import Medium from "../Icons/Medium";
+import { Tooltip } from "@chakra-ui/react";
 
 const Header = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -34,7 +35,6 @@ const Header = () => {
       // document.querySelector(".mobile-menu-logo").style.zIndex = "1";
     }
   };
-  
 
   return (
     <div className={styles.websiteHeader}>
@@ -66,34 +66,39 @@ const Header = () => {
                   arrow={false}
                 >
                   <div className={styles.dropdownMenu}>
-                    <a href="#" className={styles.dropdownItem}>
-                      <div className={styles.dropdownItemLogo}>
-                        <SolidDefiIcon />
+                    <Tooltip hasArrow label="Coming soon" variant={"black"}>
+                      <div href="#" className={styles.dropdownItem_1}>
+                        <div className={styles.dropdownItemLogo}>
+                          <SolidDefiIcon />
+                        </div>
+                        <div className={styles.dropdownItemDetails}>
+                          <h3>Coinbet Yield</h3>
+                          <p>Earn yield through the protocol</p>
+                        </div>
                       </div>
-                      <div className={styles.dropdownItemDetails}>
-                        <h3>Coinbet Yield</h3>
-                        <p>Earn yield through the protocol</p>
+                    </Tooltip>
+                    <Tooltip hasArrow label="Coming soon" variant={"black"}>
+                      <div href="#" className={styles.dropdownItem_2}>
+                        <div className={styles.dropdownItemLogo}>
+                          <MiniSlotIcon />
+                        </div>
+                        <div className={styles.dropdownItemDetails}>
+                          <h3>Coinbet Play</h3>
+                          <p>Play decentralized betting games</p>
+                        </div>
                       </div>
-                    </a>
-                    <a href="#" className={styles.dropdownItem}>
-                      <div className={styles.dropdownItemLogo}>
-                        <MiniSlotIcon />
+                    </Tooltip>
+                    <Tooltip hasArrow label="Coming soon" variant={"black"}>
+                      <div href="#" className={styles.dropdownItem_3}>
+                        <div className={styles.dropdownItemLogo}>
+                          <MiniChartBarIcon />
+                        </div>
+                        <div className={styles.dropdownItemDetails}>
+                          <h3>Coinbet Plug and Play</h3>
+                          <p>Deploy your own casino game</p>
+                        </div>
                       </div>
-                      <div className={styles.dropdownItemDetails}>
-                        <h3>Coinbet Play</h3>
-                        <p>Play decentralized betting games</p>
-                      </div>
-                    </a>
-
-                    <a href="#" className={styles.dropdownItem}>
-                      <div className={styles.dropdownItemLogo}>
-                        <MiniChartBarIcon />
-                      </div>
-                      <div className={styles.dropdownItemDetails}>
-                        <h3>Coinbet Plug and Play</h3>
-                        <p>Deploy your own casino game</p>
-                      </div>
-                    </a>
+                    </Tooltip>
                   </div>
                 </Popup>
               </li>
@@ -114,7 +119,7 @@ const Header = () => {
                   arrow={false}
                 >
                   <div className={styles.dropdownMenu}>
-                    <a href="#" className={styles.dropdownItem}>
+                    <a href="#" className={styles.dropdownItem_1}>
                       <div className={styles.dropdownItemLogo}>
                         <DocumentDublicate />
                       </div>
@@ -123,7 +128,7 @@ const Header = () => {
                         <p>Technology and purpose of the project</p>
                       </div>
                     </a>
-                    <a href="#" className={styles.dropdownItem}>
+                    <a href="#" className={styles.dropdownItem_2}>
                       <div className={styles.dropdownItemLogo}>
                         <TeamIcon />
                       </div>
@@ -132,7 +137,7 @@ const Header = () => {
                         <p>Get to know the people behind Coinbet</p>
                       </div>
                     </a>
-                    <a href="#" className={styles.dropdownItem}>
+                    <a href="#" className={styles.dropdownItem_3}>
                       <div className={styles.dropdownItemLogo}>
                         <ArchiveIcon />
                       </div>
