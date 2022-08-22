@@ -198,13 +198,13 @@ const Header = () => {
                         <div className="sidebar-footer">
                           <Button className="primary">Launch App</Button>
                           <div className="nav">
-                            <a href="https://twitter.com/CoinbetFi">
+                            <a href="https://twitter.com/CoinbetFi" target="_blank" rel="noreferrer">
                               <Twitter />
                             </a>
-                            <a href="#">
+                            <a href="https://discord.gg/zgGaKuj4US" target="_blank" rel="noreferrer">
                               <Discord />
                             </a>
-                            <a href="https://github.com/CoinbetFi">
+                            <a href="https://github.com/CoinbetFi" target="_blank" rel="noreferrer">
                               <Github />
                             </a>
                             <a href="#">
