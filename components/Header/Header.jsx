@@ -207,7 +207,7 @@ const Header = () => {
                             <a href="https://github.com/CoinbetFi" target="_blank" rel="noreferrer">
                               <Github />
                             </a>
-                            <a href="#">
+                            <a href="https://medium.com/coinbet" target="_blank" rel="noreferrer">
                               <Medium />
                             </a>
                           </div>
