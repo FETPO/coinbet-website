@@ -3,6 +3,7 @@ import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import styles from "../styles/Home.module.scss";
 import LandingPage from "./containers/LendingPage/LandingPage";
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -12,9 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
 
         {/* HTML Meta Tags */}
-        <title>
-          CoinbetFi - Building the bridge between DeFi and online betting
-        </title>
+        <title>CoinbetFi - Building the bridge between DeFi and online betting</title>
         <meta
           name="description"
           content="Coinbet protocol brings DeFi to online betting. Permissionless and Decentralised."
@@ -23,39 +22,24 @@ export default function Home() {
         {/* Facebook Meta Tags */}
         <meta property="og:url" content="https://coinbet.finance/" />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="CoinbetFi - Building the bridge between DeFi and online betting"
-        />
+        <meta property="og:title" content="CoinbetFi - Building the bridge between DeFi and online betting" />
         <meta
           property="og:description"
           content="Coinbet protocol brings DeFi to online betting. Permissionless and Decentralised."
         />
-        <meta
-          property="og:image"
-          content="https://coinbet.finance/preview.png"
-        />
+        <meta property="og:image" content="https://coinbet.finance/preview.png" />
 
         {/* Twitter Meta Tags  */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="coinbet.finance" />
         <meta property="twitter:url" content="https://coinbet.finance/" />
-        <meta
-          name="twitter:title"
-          content="CoinbetFi - Building the bridge between DeFi and online betting"
-        />
+        <meta name="twitter:title" content="CoinbetFi - Building the bridge between DeFi and online betting" />
         <meta
           name="twitter:description"
           content="Coinbet protocol brings DeFi to online betting. Permissionless and Decentralised."
         />
-        <meta
-          name="twitter:image"
-          content="https://coinbet.finance/preview.png"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
-        />
+        <meta name="twitter:image" content="https://coinbet.finance/preview.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
         <link
           rel="stylesheet"
           type="text/css"
@@ -68,6 +52,19 @@ export default function Home() {
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
       </Head>
+      <div className="container">
+        {/* Global site tag (gtag.js) - Google Analytics */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-DTYWKJWT1E" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments);}
+              gtag('js', new Date());
+    
+              gtag('config', 'G-DTYWKJWT1E');
+            `}
+        </Script>
+      </div>
 
       <Header />
       <main className={styles.main}>
