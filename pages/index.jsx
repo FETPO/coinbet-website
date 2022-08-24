@@ -64,6 +64,11 @@ export default function Home() {
               gtag('config', 'G-DTYWKJWT1E');
             `}
         </Script>
+        <Script id="prove-source" strategy="afterInteractive">
+          {`
+            !function(o,i){window.provesrc&&window.console&&console.error&&console.error("ProveSource is included twice in this page."),provesrc=window.provesrc={dq:[],display:function(){this.dq.push(arguments)}},o._provesrcAsyncInit=function(){provesrc.init({apiKey:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2MzA2NjhkOTU1ZWFhYTJhY2E4YWIyMjgiLCJpYXQiOjE2NjEzNjQ0NDF9.3Um0kEli0J2sz47xWo1q-TMdmvNYBb7aOreYwSzhb2I",v:"0.0.4"})};var r=i.createElement("script");r.type="text/javascript",r.async=!0,r["ch"+"ar"+"set"]="UTF-8",r.src="https://cdn.provesrc.com/provesrc.js";var e=i.getElementsByTagName("script")[0];e.parentNode.insertBefore(r,e)}(window,document);
+            `}
+        </Script>
       </div>
 
       <Header />
