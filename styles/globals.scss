@@ -70,7 +70,6 @@ button {
     font-size: 16px;
     padding: 12px 24px;
     @include sm {
-      padding: 6px 16px;
       font-size: 14px;
     }
     &.onlyIcon {

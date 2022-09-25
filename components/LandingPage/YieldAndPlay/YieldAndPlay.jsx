@@ -28,10 +28,10 @@ const YieldAndPlay = () => {
         </AnimatedOnScroll>
         <div className={styles.actionButtons}>
           <AnimatedOnScroll animationIn="fadeIn" animationInDelay={400}>
-            <Button className="primary">Earn Yield</Button>
+            <Button onClick={() =>  window.open('https://play.coinbet.finance/reward-pool')}  className="primary">Earn Yield</Button>
           </AnimatedOnScroll>
           <AnimatedOnScroll animationIn="fadeIn" animationInDelay={500}>
-            <Button className="secondary">Start Betting</Button>
+            <Button onClick={() =>  window.open('https://play.coinbet.finance/slot-game')}  className="secondary">Start Betting</Button>
           </AnimatedOnScroll>
         </div>
       </div>

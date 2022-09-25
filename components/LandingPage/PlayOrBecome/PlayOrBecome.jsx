@@ -8,7 +8,7 @@ import { AnimatedOnScroll } from "react-animated-css-onscroll";
 
 const PlayOrBecome = () => {
   const [showNext, setShowNext] = useState(false);
-  console.log(showNext);
+
   return (
     <div className={styles.playOrBecomeSection}>
       <div className={` container ${styles.playOrBecome}`}>
@@ -41,7 +41,7 @@ const PlayOrBecome = () => {
                 </div>
                 <p>
                   Bet on a truly decentralised blockchain betting games protocol
-                  with full transparency in regards to awarding prizes
+                  with full transparency in regards to awarding prizes.
                 </p>
               </div>
               {!showNext ? setShowNext(true) : ""}

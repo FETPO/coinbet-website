@@ -109,7 +109,7 @@
       animation: growDown 200ms ($num * 50ms) ease-in-out forwards;
       transform-origin: top center;
       &:active {
-        pointer-events: none;
+        // pointer-events: none;
       }
       .dropdownItemDetails {
         > h3 {

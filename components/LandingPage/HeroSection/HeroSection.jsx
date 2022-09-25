@@ -20,8 +20,8 @@ const HeroSection = () => {
               Decentralised.
             </p>
             <div className={styles.actions}>
-              <Button className="primary">Earn Yield</Button>
-              <Button className="secondary">Start Betting</Button>
+              <Button onClick={() =>  window.open('https://play.coinbet.finance/reward-pool')}  className="primary">Earn Yield</Button>
+              <Button onClick={() =>  window.open('https://play.coinbet.financ/slot-game')}  className="secondary">Start Betting</Button>
             </div>
           </div>
         </AnimatedOnScroll>

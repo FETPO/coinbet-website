@@ -8,6 +8,7 @@ import WebsiteLogo from "../Icons/WebsiteLogo";
 import bgGradient from "../../assets/images/LandingPage/gradient.png";
 import Image from "next/image";
 import { Tooltip } from "@chakra-ui/react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -36,9 +37,11 @@ const Footer = () => {
             </div>
             <div className={styles.infoNav}>
               <h3>Info</h3>
-              <a href="#">Whitepaper</a>
-              <a href="#">Team</a>
-              <a href="#">Docs</a>
+              <a href="https://docs.coinbet.finance" target='_new'>Docs</a>
+              <a href="https://coinbet.finance/whitepaper.pdf" target='_new'>Whitepaper</a>
+              <Tooltip hasArrow label="Coming soon" variant={"black"}>
+                <a href="https://dao.coinbet.finance" target='_new'>Governance</a>
+              </Tooltip>
             </div>
           </div>
         </div>

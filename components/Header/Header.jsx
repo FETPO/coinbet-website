@@ -25,9 +25,7 @@ const Header = () => {
   const onSetSidebarOpen = (open) => {
     setSidebarOpen(open);
     if (sidebarOpen) {
-      document
-        .querySelector(".sidebar-root")
-        .classList.remove("sidbar-container");
+      document.querySelector(".sidebar-root").classList.remove("sidbar-container");
       document.querySelector("html").classList.remove("fixed");
     } else {
       document.querySelector(".sidebar-root").classList.add("sidbar-container");
@@ -119,25 +117,7 @@ const Header = () => {
                   arrow={false}
                 >
                   <div className={styles.dropdownMenu}>
-                    <a href="#" className={styles.dropdownItem_1}>
-                      <div className={styles.dropdownItemLogo}>
-                        <DocumentDublicate />
-                      </div>
-                      <div className={styles.dropdownItemDetails}>
-                        <h3>Whitepaper</h3>
-                        <p>Technology and purpose of the project</p>
-                      </div>
-                    </a>
-                    <a href="#" className={styles.dropdownItem_2}>
-                      <div className={styles.dropdownItemLogo}>
-                        <TeamIcon />
-                      </div>
-                      <div className={styles.dropdownItemDetails}>
-                        <h3>Team</h3>
-                        <p>Get to know the people behind Coinbet</p>
-                      </div>
-                    </a>
-                    <a href="#" className={styles.dropdownItem_3}>
+                    <a href="https://docs.coinbet.finance" target='_new' className={styles.dropdownItem_3}>
                       <div className={styles.dropdownItemLogo}>
                         <ArchiveIcon />
                       </div>
@@ -146,19 +126,38 @@ const Header = () => {
                         <p>Get up and running on new features</p>
                       </div>
                     </a>
+                    <a href="https://coinbet.finance/whitepaper.pdf" target='_new' className={styles.dropdownItem_1}>
+                      <div className={styles.dropdownItemLogo}>
+                        <DocumentDublicate />
+                      </div>
+                      <div className={styles.dropdownItemDetails}>
+                        <h3>Whitepaper</h3>
+                        <p>Technology and purpose of the project</p>
+                      </div>
+                    </a>
+                    <Tooltip hasArrow label="Coming soon" variant={"black"}>
+                      <a href="https://dao.coinbet.finance" target='_new' className={styles.dropdownItem_2}>
+                        <div className={styles.dropdownItemLogo}>
+                          <TeamIcon />
+                        </div>
+                        <div className={styles.dropdownItemDetails}>
+                          <h3>Governance</h3>
+                          <p>Vote on Coinbet&apos;s governance proposals</p>
+                        </div>
+                      </a>
+                    </Tooltip>
                   </div>
                 </Popup>
               </li>
               <li>
-                <a href="#">Governance</a>
+                <Tooltip hasArrow label="Coming soon" variant={"black"}>
+                  <a href="https://dao.coinbet.finance" target='_new'>Governance</a>
+                </Tooltip>
               </li>
             </ul>
             <div className={styles.navbarActions}>
-              <Button className="primary">Launch App</Button>
-              <Button
-                onClick={() => onSetSidebarOpen(true)}
-                className="secondary onlyIcon"
-              >
+              <Button onClick={() =>  window.open('https://play.coinbet.finance')} className="primary">Enter Lobby</Button>
+              <Button onClick={() => onSetSidebarOpen(true)} className="secondary onlyIcon">
                 <MenuIcon />
               </Button>
               <div className="mobile-menu">
@@ -169,10 +168,7 @@ const Header = () => {
                         <div className="sidebar-website-logo">
                           <WebsiteLogo />
                         </div>
-                        <Button
-                          onClick={() => onSetSidebarOpen(false)}
-                          className="secondary onlyIcon"
-                        >
+                        <Button onClick={() => onSetSidebarOpen(false)} className="secondary onlyIcon">
                           <CloseIcon />
                         </Button>
                       </div>
@@ -189,14 +185,14 @@ const Header = () => {
                           <div className="info-section">
                             <h3>Info</h3>
                             <div>
-                              <a href="#">Whitepaper</a>
-                              <a href="#">Team</a>
-                              <a href="#">Docs</a>
+                              <a href="https://docs.coinbet.finance" target='_new'>Docs</a>
+                              <a href="https://coinbet.finance/whitepaper.pdf" target='_new'>Whitepaper</a>
+                              <a href="https://dao.coinbet.finance" target='_new'>Governance</a>
                             </div>
                           </div>
                         </div>
                         <div className="sidebar-footer">
-                          <Button className="primary">Launch App</Button>
+                          <Button className="primary">Enter Lobby</Button>
                           <div className="nav">
                             <a href="https://twitter.com/CoinbetFi" target="_blank" rel="noreferrer">
                               <Twitter />
@@ -230,10 +226,7 @@ const Header = () => {
                   overlayClassName={"sidbar-overlay"}
                   pullRight
                 >
-                  <button
-                    className="sidebar-action"
-                    onClick={() => onSetSidebarOpen(true)}
-                  ></button>
+                  <button className="sidebar-action" onClick={() => onSetSidebarOpen(true)}></button>
                 </Sidebar>
               </div>
             </div>

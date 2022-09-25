@@ -39,9 +39,9 @@ export default class MultipleItems extends Component {
         <Slider {...settings}>
           <div className={"roadmap"}>
             <div className={"number"}>01</div>
-            <p className={"date"}>September 2022</p>
+            <p className={"date"}>Q4 2022</p>
             <h3 className={"subtitle"}>
-              Launch Degen Slots, powered by Coinbet
+              Launch Yield Slots, powered by Coinbet
             </h3>
             <p className={"desc"}>
               DeFi Slots game with Rewards Liquidity pool (Mainnet, Polygon,
@@ -50,7 +50,7 @@ export default class MultipleItems extends Component {
           </div>
           <div className={"roadmap"}>
             <div className={"number"}>02</div>
-            <p className={"date"}>November 2022</p>
+            <p className={"date"}>Q1 2023</p>
             <h3 className={"subtitle"}>Launch Coinbet Yield and Play Casino</h3>
             <p className={"desc"}>
               Yield generating reward pools paired with betting games with
@@ -59,7 +59,7 @@ export default class MultipleItems extends Component {
           </div>
           <div className={"roadmap"}>
             <div className={"number"}>03</div>
-            <p className={"date"}>February 2023</p>
+            <p className={"date"}>Q2 2023</p>
             <h3 className={"subtitle"}>Launch Governance - CoinbetDAO</h3>
             <p className={"desc"}>
               Yield Farming for Coinbet Governance Token and DAO activation
@@ -67,7 +67,7 @@ export default class MultipleItems extends Component {
           </div>
           <div className={"roadmap"}>
             <div className={"number"}>04</div>
-            <p className={"date"}>September 2023</p>
+            <p className={"date"}>Q3 2023</p>
             <h3 className={"subtitle"}>
               Launch Coinbet Plug and Play platform
             </h3>
