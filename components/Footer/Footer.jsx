@@ -19,7 +19,7 @@ const Footer = () => {
             <WebsiteLogo />
             <p>
               Coinbet protocol brings DeFi to online betting. Permissionless and
-              Decentralised.
+              Decentralized.
             </p>
           </div>
           <div className={styles.nav}>

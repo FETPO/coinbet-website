@@ -15,8 +15,8 @@ const PlayOrBecome = () => {
         <div className={styles.information}>
           <AnimatedOnScroll animationIn="fadeInLeft" animationInDelay={100}>
             <h1 className={styles.title}>
-              Play the game or <br />
-              <span>become the game</span>
+              Web 3.0 Gambling dApp <br />
+              <span>with DeFi capabilities</span>
             </h1>
           </AnimatedOnScroll>
           <div className={styles.pictureMobile}>
@@ -29,8 +29,9 @@ const PlayOrBecome = () => {
                   <ChartArrow />
                 </div>
                 <p>
-                  Earn yield through bankrolling betting activities and earn a
-                  share from the rewards, all comlpetely decentralised.
+                  Become a (LP) liquidity provider in one of Coinbet&apos;s
+                  House Pools and earn yield by bankrolling our Web 3.0 betting
+                  games.
                 </p>
               </div>
             </AnimatedOnScroll>
@@ -40,8 +41,8 @@ const PlayOrBecome = () => {
                   <Trophy />
                 </div>
                 <p>
-                  Bet on a truly decentralised blockchain betting games protocol
-                  with full transparency in regards to awarding prizes.
+                  Connect your Metamask wallet to our decentralized gambling
+                  dApp and bet on a truly decentralized blockchain betting games.
                 </p>
               </div>
               {!showNext ? setShowNext(true) : ""}

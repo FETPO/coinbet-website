@@ -18,20 +18,32 @@ const YieldAndPlay = () => {
         </AnimatedOnScroll>
         <AnimatedOnScroll animationIn="fadeIn" animationInDelay={300}>
           <p className={styles.desc}>
-            Reward pools paired with betting games with pluggable reward
-            strategies. We give the opportunity to everyone who wants to
-            bankroll betting activities and earn a share of the profits. Players
-            have full transparency in regards to awarding prizes, using a
-            protocol that runs on fair, transparent, and immutable smart
-            contracts.
+            Coinbet is a decentralized Web 3.0 betting protocol, founded with the
+            mission to enable users to earn yield through bankrolling betting
+            activities, as well as to empower players to gamble on a provably
+            fair blockchain betting protocol.
           </p>
         </AnimatedOnScroll>
         <div className={styles.actionButtons}>
           <AnimatedOnScroll animationIn="fadeIn" animationInDelay={400}>
-            <Button onClick={() =>  window.open('https://play.coinbet.finance/reward-pool')}  className="primary">Earn Yield</Button>
+            <Button
+              onClick={() =>
+                window.open("https://play.coinbet.finance/reward-pool")
+              }
+              className="primary"
+            >
+              Earn Yield
+            </Button>
           </AnimatedOnScroll>
           <AnimatedOnScroll animationIn="fadeIn" animationInDelay={500}>
-            <Button onClick={() =>  window.open('https://play.coinbet.finance/slot-game')}  className="secondary">Start Betting</Button>
+            <Button
+              onClick={() =>
+                window.open("https://play.coinbet.finance/slot-game")
+              }
+              className="secondary"
+            >
+              Start Betting
+            </Button>
           </AnimatedOnScroll>
         </div>
       </div>

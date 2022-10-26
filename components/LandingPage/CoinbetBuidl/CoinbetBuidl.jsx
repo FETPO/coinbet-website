@@ -12,10 +12,10 @@ const CoinbetBuidl = () => {
           <h1 className={styles.title}>Coinbet Plug and Play Platform</h1>
           <p className={styles.desc}>
             <span>
-              Create your own casino - with custom token, game and RTP{" "}
+              Deploy your own Web 3.0 Casino gambling dApp.{" "}
             </span>
             Coinbet provides users with the ability to launch their own
-            decentralized casino games with several clicks. Casino games
+            decentralized Web 3.0 casino dApps with several clicks. Casino games
             creators can choose from different games, ERC20 tokens, and RTP
             percentages, connecting their own pools or using our community
             pools.

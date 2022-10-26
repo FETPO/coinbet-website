@@ -41,20 +41,22 @@ export default class MultipleItems extends Component {
             <div className={"number"}>01</div>
             <p className={"date"}>Q4 2022</p>
             <h3 className={"subtitle"}>
-              Launch Yield Slots, powered by Coinbet
+              Launch NFT themed Slots, powered by Coinbet
             </h3>
             <p className={"desc"}>
-              DeFi Slots game with Rewards Liquidity pool (Mainnet, Polygon,
-              BSC), powered by Coinbet.
+              DeFi Slots game with House Pool for LP providers, powered by
+              Coinbet.
             </p>
           </div>
           <div className={"roadmap"}>
             <div className={"number"}>02</div>
             <p className={"date"}>Q1 2023</p>
-            <h3 className={"subtitle"}>Launch Coinbet Yield and Play Casino</h3>
+            <h3 className={"subtitle"}>
+              Launch Coinbet Yield and Play Web 3.0 Casino
+            </h3>
             <p className={"desc"}>
-              Yield generating reward pools paired with betting games with
-              pluggable reward strategies.
+              Non-custodial Web 3.0 casino with multiple gambling dApps and
+              House Pools for liquidity providers (LPs).
             </p>
           </div>
           <div className={"roadmap"}>
@@ -62,7 +64,7 @@ export default class MultipleItems extends Component {
             <p className={"date"}>Q2 2023</p>
             <h3 className={"subtitle"}>Launch Governance - CoinbetDAO</h3>
             <p className={"desc"}>
-              Yield Farming for Coinbet Governance Token and DAO activation
+              Yield Farming for Coinbet Governance Token and DAO activation.
             </p>
           </div>
           <div className={"roadmap"}>
@@ -72,8 +74,8 @@ export default class MultipleItems extends Component {
               Launch Coinbet Plug and Play platform
             </h3>
             <p className={"desc"}>
-              Deploy and launch your own casino games - with custom token, game
-              and RTP percentages
+              Deploy and launch your own Web 3.0 casino games - with custom token, game
+              and RTP percentages.
             </p>
           </div>
         </Slider>

@@ -13,19 +13,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
 
         {/* HTML Meta Tags */}
-        <title>CoinbetFi - Building the bridge between DeFi and online betting</title>
+        <title>Coinbet - Decentralized Web3 Casino and DeFi protocol</title>
         <meta
           name="description"
-          content="Coinbet protocol brings DeFi to online betting. Permissionless and Decentralised."
+          content="Coinbet protocol brings DeFi to online betting. Permissionless and Decentralized."
         />
 
         {/* Facebook Meta Tags */}
         <meta property="og:url" content="https://coinbet.finance/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="CoinbetFi - Building the bridge between DeFi and online betting" />
+        <meta property="og:title" content="Coinbet - Decentralized Web3 Casino and DeFi protocol" />
         <meta
           property="og:description"
-          content="Coinbet protocol brings DeFi to online betting. Permissionless and Decentralised."
+          content="Coinbet protocol brings DeFi to online betting. Permissionless and Decentralized."
         />
         <meta property="og:image" content="https://coinbet.finance/preview.png" />
 
@@ -33,10 +33,10 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="coinbet.finance" />
         <meta property="twitter:url" content="https://coinbet.finance/" />
-        <meta name="twitter:title" content="CoinbetFi - Building the bridge between DeFi and online betting" />
+        <meta name="twitter:title" content="Coinbet - Decentralized Web3 Casino and DeFi protocol" />
         <meta
           name="twitter:description"
-          content="Coinbet protocol brings DeFi to online betting. Permissionless and Decentralised."
+          content="Coinbet protocol brings DeFi to online betting. Permissionless and Decentralized."
         />
         <meta name="twitter:image" content="https://coinbet.finance/preview.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
