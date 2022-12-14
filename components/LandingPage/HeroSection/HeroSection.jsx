@@ -21,7 +21,7 @@ const HeroSection = () => {
             </h2>
             <div className={styles.actions}>
               <Button onClick={() =>  window.open('https://play.coinbet.finance/reward-pool')}  className="primary">Earn Yield</Button>
-              <Button onClick={() =>  window.open('https://play.coinbet.financ/slot-game')}  className="secondary">Start Betting</Button>
+              <Button onClick={() =>  window.open('https://play.coinbet.finance/slot-game')}  className="secondary">Start Betting</Button>
             </div>
           </div>
         </AnimatedOnScroll>

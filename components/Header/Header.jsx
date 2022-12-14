@@ -64,8 +64,7 @@ const Header = () => {
                   arrow={false}
                 >
                   <div className={styles.dropdownMenu}>
-                    <Tooltip hasArrow label="Coming soon" variant={"black"}>
-                      <div href="#" className={styles.dropdownItem_1}>
+                      <a href="https://play.coinbet.finance/reward-pool" target={'_blank'} className={styles.dropdownItem_1} rel="noreferrer">
                         <div className={styles.dropdownItemLogo}>
                           <SolidDefiIcon />
                         </div>
@@ -73,10 +72,8 @@ const Header = () => {
                           <h3>Coinbet Yield</h3>
                           <p>Earn yield through the protocol</p>
                         </div>
-                      </div>
-                    </Tooltip>
-                    <Tooltip hasArrow label="Coming soon" variant={"black"}>
-                      <div href="#" className={styles.dropdownItem_2}>
+                      </a>
+                      <a href="https://play.coinbet.finance/slot-game" target={'_blank'} className={styles.dropdownItem_2} rel="noreferrer">
                         <div className={styles.dropdownItemLogo}>
                           <MiniSlotIcon />
                         </div>
@@ -84,8 +81,7 @@ const Header = () => {
                           <h3>Coinbet Play</h3>
                           <p>Play decentralized betting games</p>
                         </div>
-                      </div>
-                    </Tooltip>
+                      </a>
                     <Tooltip hasArrow label="Coming soon" variant={"black"}>
                       <div href="#" className={styles.dropdownItem_3}>
                         <div className={styles.dropdownItemLogo}>
@@ -135,23 +131,21 @@ const Header = () => {
                         <p>Technology and purpose of the project</p>
                       </div>
                     </a>
-                    <Tooltip hasArrow label="Coming soon" variant={"black"}>
-                      <a href="https://dao.coinbet.finance" target='_new' className={styles.dropdownItem_2}>
+                      <a href="https://coinbet.finance/pitchdeck.pdf" target='_new' className={styles.dropdownItem_2}>
                         <div className={styles.dropdownItemLogo}>
                           <TeamIcon />
                         </div>
                         <div className={styles.dropdownItemDetails}>
-                          <h3>Governance</h3>
-                          <p>Vote on Coinbet&apos;s governance proposals</p>
+                          <h3>Pitch Deck</h3>
+                          <p>Check out our deck if you want to invest</p>
                         </div>
                       </a>
-                    </Tooltip>
                   </div>
                 </Popup>
               </li>
               <li>
                 <Tooltip hasArrow label="Coming soon" variant={"black"}>
-                  <a href="https://dao.coinbet.finance" target='_new'>Governance</a>
+                  <div href="https://dao.coinbet.finance" target='_new'>Governance</div>
                 </Tooltip>
               </li>
             </ul>

@@ -25,23 +25,17 @@ const Footer = () => {
           <div className={styles.nav}>
             <div className={styles.productsNav}>
               <h3>Products</h3>
+                <a href="https://play.coinbet.finance/reward-pool" target={'_blank'} rel="noreferrer">Coinbet Yield</a>
+                <a href="https://play.coinbet.finance/slot-game" target={'_blank'} rel="noreferrer">Coinbet Play</a>
               <Tooltip hasArrow label="Coming soon" variant={"black"}>
-                <a href="#">Coinbet Yield</a>
-              </Tooltip>
-              <Tooltip hasArrow label="Coming soon" variant={"black"}>
-                <a href="#">Coinbet Play</a>
-              </Tooltip>
-              <Tooltip hasArrow label="Coming soon" variant={"black"}>
-                <a href="#">Coinbet Plug and Play</a>
+                <a href="">Coinbet Plug and Play</a>
               </Tooltip>
             </div>
             <div className={styles.infoNav}>
               <h3>Info</h3>
               <a href="https://docs.coinbet.finance" target='_new'>Docs</a>
               <a href="https://coinbet.finance/whitepaper.pdf" target='_new'>Whitepaper</a>
-              <Tooltip hasArrow label="Coming soon" variant={"black"}>
-                <a href="https://dao.coinbet.finance" target='_new'>Governance</a>
-              </Tooltip>
+              <a href="https://coinbet.finance/pitchdeck.pdf" target='_new'>Pitch Deck</a>
             </div>
           </div>
         </div>
