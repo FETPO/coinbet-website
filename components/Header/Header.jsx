@@ -25,7 +25,9 @@ const Header = () => {
   const onSetSidebarOpen = (open) => {
     setSidebarOpen(open);
     if (sidebarOpen) {
-      document.querySelector(".sidebar-root").classList.remove("sidbar-container");
+      document
+        .querySelector(".sidebar-root")
+        .classList.remove("sidbar-container");
       document.querySelector("html").classList.remove("fixed");
     } else {
       document.querySelector(".sidebar-root").classList.add("sidbar-container");
@@ -47,7 +49,8 @@ const Header = () => {
                 <Popup
                   trigger={
                     <div>
-                      Products <NavArrow />
+                      Products 
+                      <NavArrow />
                     </div>
                   }
                   position="bottom center"
@@ -64,24 +67,34 @@ const Header = () => {
                   arrow={false}
                 >
                   <div className={styles.dropdownMenu}>
-                      <a href="https://play.coinbet.finance/pools" target={'_blank'} className={styles.dropdownItem_1} rel="noreferrer">
-                        <div className={styles.dropdownItemLogo}>
-                          <SolidDefiIcon />
-                        </div>
-                        <div className={styles.dropdownItemDetails}>
-                          <h3>Coinbet Yield</h3>
-                          <p>Earn yield through the protocol</p>
-                        </div>
-                      </a>
-                      <a href="https://play.coinbet.finance/games" target={'_blank'} className={styles.dropdownItem_2} rel="noreferrer">
-                        <div className={styles.dropdownItemLogo}>
-                          <MiniSlotIcon />
-                        </div>
-                        <div className={styles.dropdownItemDetails}>
-                          <h3>Coinbet Play</h3>
-                          <p>Play decentralized betting games</p>
-                        </div>
-                      </a>
+                    <a
+                      href="https://play.coinbet.finance/pools"
+                      target={"_blank"}
+                      className={styles.dropdownItem_1}
+                      rel="noreferrer"
+                    >
+                      <div className={styles.dropdownItemLogo}>
+                        <SolidDefiIcon />
+                      </div>
+                      <div className={styles.dropdownItemDetails}>
+                        <h3>Coinbet Yield</h3>
+                        <p>Earn yield through the protocol</p>
+                      </div>
+                    </a>
+                    <a
+                      href="https://play.coinbet.finance/games"
+                      target={"_blank"}
+                      className={styles.dropdownItem_2}
+                      rel="noreferrer"
+                    >
+                      <div className={styles.dropdownItemLogo}>
+                        <MiniSlotIcon />
+                      </div>
+                      <div className={styles.dropdownItemDetails}>
+                        <h3>Coinbet Play</h3>
+                        <p>Play decentralized betting games</p>
+                      </div>
+                    </a>
                     <Tooltip hasArrow label="Coming soon" variant={"black"}>
                       <div href="#" className={styles.dropdownItem_3}>
                         <div className={styles.dropdownItemLogo}>
@@ -113,7 +126,11 @@ const Header = () => {
                   arrow={false}
                 >
                   <div className={styles.dropdownMenu}>
-                    <a href="https://docs.coinbet.finance" target='_new' className={styles.dropdownItem_3}>
+                    <a
+                      href="https://docs.coinbet.finance"
+                      target="_new"
+                      className={styles.dropdownItem_3}
+                    >
                       <div className={styles.dropdownItemLogo}>
                         <ArchiveIcon />
                       </div>
@@ -122,7 +139,11 @@ const Header = () => {
                         <p>Get up and running on new features</p>
                       </div>
                     </a>
-                    <a href="https://coinbet.finance/whitepaper.pdf" target='_new' className={styles.dropdownItem_1}>
+                    <a
+                      href="https://coinbet.finance/whitepaper.pdf"
+                      target="_new"
+                      className={styles.dropdownItem_1}
+                    >
                       <div className={styles.dropdownItemLogo}>
                         <DocumentDublicate />
                       </div>
@@ -131,27 +152,41 @@ const Header = () => {
                         <p>Technology and purpose of the project</p>
                       </div>
                     </a>
-                      <a href="https://coinbet.finance/pitchdeck.pdf" target='_new' className={styles.dropdownItem_2}>
-                        <div className={styles.dropdownItemLogo}>
-                          <TeamIcon />
-                        </div>
-                        <div className={styles.dropdownItemDetails}>
-                          <h3>Pitch Deck</h3>
-                          <p>Check out our deck if you want to invest</p>
-                        </div>
-                      </a>
+                    <a
+                      href="https://coinbet.finance/pitchdeck.pdf"
+                      target="_new"
+                      className={styles.dropdownItem_2}
+                    >
+                      <div className={styles.dropdownItemLogo}>
+                        <TeamIcon />
+                      </div>
+                      <div className={styles.dropdownItemDetails}>
+                        <h3>Pitch Deck</h3>
+                        <p>Check out our deck if you want to invest</p>
+                      </div>
+                    </a>
                   </div>
                 </Popup>
               </li>
               <li>
                 <Tooltip hasArrow label="Coming soon" variant={"black"}>
-                  <div href="https://dao.coinbet.finance" target='_new'>Governance</div>
+                  <div href="https://dao.coinbet.finance" target="_new">
+                    Governance
+                  </div>
                 </Tooltip>
               </li>
             </ul>
             <div className={styles.navbarActions}>
-              <Button onClick={() =>  window.open('https://play.coinbet.finance')} className="primary">Enter Lobby</Button>
-              <Button onClick={() => onSetSidebarOpen(true)} className="secondary onlyIcon">
+              <Button
+                onClick={() => window.open("https://play.coinbet.finance")}
+                className="primary"
+              >
+                Enter Lobby
+              </Button>
+              <Button
+                onClick={() => onSetSidebarOpen(true)}
+                className="secondary onlyIcon"
+              >
                 <MenuIcon />
               </Button>
               <div className="mobile-menu">
@@ -162,7 +197,10 @@ const Header = () => {
                         <div className="sidebar-website-logo">
                           <WebsiteLogo />
                         </div>
-                        <Button onClick={() => onSetSidebarOpen(false)} className="secondary onlyIcon">
+                        <Button
+                          onClick={() => onSetSidebarOpen(false)}
+                          className="secondary onlyIcon"
+                        >
                           <CloseIcon />
                         </Button>
                       </div>
@@ -179,25 +217,56 @@ const Header = () => {
                           <div className="info-section">
                             <h3>Info</h3>
                             <div>
-                              <a href="https://docs.coinbet.finance" target='_new'>Docs</a>
-                              <a href="https://coinbet.finance/whitepaper.pdf" target='_new'>Whitepaper</a>
-                              <a href="https://dao.coinbet.finance" target='_new'>Governance</a>
+                              <a
+                                href="https://docs.coinbet.finance"
+                                target="_new"
+                              >
+                                Docs
+                              </a>
+                              <a
+                                href="https://coinbet.finance/whitepaper.pdf"
+                                target="_new"
+                              >
+                                Whitepaper
+                              </a>
+                              <a
+                                href="https://dao.coinbet.finance"
+                                target="_new"
+                              >
+                                Governance
+                              </a>
                             </div>
                           </div>
                         </div>
                         <div className="sidebar-footer">
                           <Button className="primary">Enter Lobby</Button>
                           <div className="nav">
-                            <a href="https://twitter.com/CoinbetFi" target="_blank" rel="noreferrer">
+                            <a
+                              href="https://twitter.com/CoinbetFi"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
                               <Twitter />
                             </a>
-                            <a href="https://discord.gg/zgGaKuj4US" target="_blank" rel="noreferrer">
+                            <a
+                              href="https://discord.gg/zgGaKuj4US"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
                               <Discord />
                             </a>
-                            <a href="https://github.com/CoinbetFi" target="_blank" rel="noreferrer">
+                            <a
+                              href="https://github.com/CoinbetFi"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
                               <Github />
                             </a>
-                            <a href="https://medium.com/coinbet" target="_blank" rel="noreferrer">
+                            <a
+                              href="https://medium.com/coinbet"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
                               <Medium />
                             </a>
                           </div>
@@ -220,7 +289,10 @@ const Header = () => {
                   overlayClassName={"sidbar-overlay"}
                   pullRight
                 >
-                  <button className="sidebar-action" onClick={() => onSetSidebarOpen(true)}></button>
+                  <button
+                    className="sidebar-action"
+                    onClick={() => onSetSidebarOpen(true)}
+                  ></button>
                 </Sidebar>
               </div>
             </div>
