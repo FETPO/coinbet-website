@@ -25,8 +25,8 @@ const Footer = () => {
           <div className={styles.nav}>
             <div className={styles.productsNav}>
               <h3>Products</h3>
-                <a href="https://play.coinbet.finance/reward-pool" target={'_blank'} rel="noreferrer">Coinbet Yield</a>
-                <a href="https://play.coinbet.finance/slot-game" target={'_blank'} rel="noreferrer">Coinbet Play</a>
+                <a href="https://play.coinbet.finance/pools" target={'_blank'} rel="noreferrer">Coinbet Yield</a>
+                <a href="https://play.coinbet.finance/games" target={'_blank'} rel="noreferrer">Coinbet Play</a>
               <Tooltip hasArrow label="Coming soon" variant={"black"}>
                 <a href="">Coinbet Plug and Play</a>
               </Tooltip>
@@ -55,7 +55,7 @@ const Footer = () => {
             </a>
           </div>
           <p className={styles.copyright}>
-            © 2022 CoinbetFi. All right reserved.
+            © 2023 CoinbetFi. All right reserved.
           </p>
         </div>
       </div>

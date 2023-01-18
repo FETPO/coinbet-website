@@ -64,7 +64,7 @@ const Header = () => {
                   arrow={false}
                 >
                   <div className={styles.dropdownMenu}>
-                      <a href="https://play.coinbet.finance/reward-pool" target={'_blank'} className={styles.dropdownItem_1} rel="noreferrer">
+                      <a href="https://play.coinbet.finance/pools" target={'_blank'} className={styles.dropdownItem_1} rel="noreferrer">
                         <div className={styles.dropdownItemLogo}>
                           <SolidDefiIcon />
                         </div>
@@ -73,7 +73,7 @@ const Header = () => {
                           <p>Earn yield through the protocol</p>
                         </div>
                       </a>
-                      <a href="https://play.coinbet.finance/slot-game" target={'_blank'} className={styles.dropdownItem_2} rel="noreferrer">
+                      <a href="https://play.coinbet.finance/games" target={'_blank'} className={styles.dropdownItem_2} rel="noreferrer">
                         <div className={styles.dropdownItemLogo}>
                           <MiniSlotIcon />
                         </div>

@@ -39,9 +39,9 @@ export default class MultipleItems extends Component {
         <Slider {...settings}>
           <div className={"roadmap"}>
             <div className={"number"}>01</div>
-            <p className={"date"}>Q4 2022</p>
+            <p className={"date"}>Q1 2023</p>
             <h3 className={"subtitle"}>
-              Launch NFT themed Slots, powered by Coinbet
+              Launch BAYC Slot Machine, powered by Coinbet
             </h3>
             <p className={"desc"}>
               DeFi Slots game with House Pool for LP providers, powered by
@@ -50,7 +50,7 @@ export default class MultipleItems extends Component {
           </div>
           <div className={"roadmap"}>
             <div className={"number"}>02</div>
-            <p className={"date"}>Q1 2023</p>
+            <p className={"date"}>Q3 2023</p>
             <h3 className={"subtitle"}>
               Launch Coinbet Yield and Play Web 3.0 Casino
             </h3>
@@ -61,7 +61,7 @@ export default class MultipleItems extends Component {
           </div>
           <div className={"roadmap"}>
             <div className={"number"}>03</div>
-            <p className={"date"}>Q2 2023</p>
+            <p className={"date"}>Q4 2023</p>
             <h3 className={"subtitle"}>Launch Governance - CoinbetDAO</h3>
             <p className={"desc"}>
               Yield Farming for Coinbet Governance Token and DAO activation.
@@ -69,7 +69,7 @@ export default class MultipleItems extends Component {
           </div>
           <div className={"roadmap"}>
             <div className={"number"}>04</div>
-            <p className={"date"}>Q3 2023</p>
+            <p className={"date"}>Q1 2024</p>
             <h3 className={"subtitle"}>
               Launch Coinbet Plug and Play platform
             </h3>

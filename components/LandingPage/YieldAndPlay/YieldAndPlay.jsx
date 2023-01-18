@@ -28,7 +28,7 @@ const YieldAndPlay = () => {
           <AnimatedOnScroll animationIn="fadeIn" animationInDelay={400}>
             <Button
               onClick={() =>
-                window.open("https://play.coinbet.finance/reward-pool")
+                window.open("https://play.coinbet.finance/pools")
               }
               className="primary"
             >
@@ -38,7 +38,7 @@ const YieldAndPlay = () => {
           <AnimatedOnScroll animationIn="fadeIn" animationInDelay={500}>
             <Button
               onClick={() =>
-                window.open("https://play.coinbet.finance/slot-game")
+                window.open("https://play.coinbet.finance/games")
               }
               className="secondary"
             >
