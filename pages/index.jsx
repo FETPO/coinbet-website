@@ -13,19 +13,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
 
         {/* HTML Meta Tags */}
-        <title>Coinbet - Decentralized Web3 Casino and DeFi protocol</title>
+        <title>Coinbet - Decentralized Web 3.0 Betting Protocol for High Yield and Fair Gambling</title>
         <meta
           name="description"
-          content="Coinbet protocol brings DeFi to online betting. Permissionless and Decentralized."
+          content="Join Coinbet, the decentralized Web 3.0 betting protocol and experience high yield through bankrolling betting activities and provably fair blockchain gambling. Connect your Metamask wallet and play on our dApp now."
         />
 
         {/* Facebook Meta Tags */}
         <meta property="og:url" content="https://coinbet.finance/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Coinbet - Decentralized Web3 Casino and DeFi protocol" />
+        <meta property="og:title" content="Coinbet - Decentralized Web 3.0 Betting Protocol for High Yield and Fair Gambling" />
         <meta
           property="og:description"
-          content="Coinbet protocol brings DeFi to online betting. Permissionless and Decentralized."
+          content="Join Coinbet, the decentralized Web 3.0 betting protocol and experience high yield through bankrolling betting activities and provably fair blockchain gambling. Connect your Metamask wallet and play on our dApp now."
         />
         <meta property="og:image" content="https://coinbet.finance/preview.png" />
 
@@ -33,10 +33,10 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="coinbet.finance" />
         <meta property="twitter:url" content="https://coinbet.finance/" />
-        <meta name="twitter:title" content="Coinbet - Decentralized Web3 Casino and DeFi protocol" />
+        <meta name="twitter:title" content="Coinbet - Decentralized Web 3.0 Betting Protocol for High Yield and Fair Gambling" />
         <meta
           name="twitter:description"
-          content="Coinbet protocol brings DeFi to online betting. Permissionless and Decentralized."
+          content="Join Coinbet, the decentralized Web 3.0 betting protocol and experience high yield through bankrolling betting activities and provably fair blockchain gambling. Connect your Metamask wallet and play on our dApp now."
         />
         <meta name="twitter:image" content="https://coinbet.finance/preview.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />

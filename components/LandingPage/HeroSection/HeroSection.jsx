@@ -13,11 +13,10 @@ const HeroSection = () => {
         <AnimatedOnScroll animationIn="fadeIn" animationInDelay={200}>
           <div className={styles.information}>
             <h1 className={styles.title}>
-              The Decentralized Web 3.0 Casino <span> DeFi Protocol</span>
+              Next Generation Web 3.0 Casino <span> DeFi Protocol</span>
             </h1>
             <h2 className={styles.description}>
-              Experience DeFi and Web 3.0 gambling from your wallet.<br></br> Non-custodial, Permissionless and
-              Decentralized.
+              Experience the Future of Web 3.0 Gambling: <br></br> Non-Custodial, Permissionless, and Decentralized
             </h2>
             <div className={styles.actions}>
               <Button onClick={() =>  window.open('https://play.coinbet.finance/pools')}  className="primary">Earn Yield</Button>
